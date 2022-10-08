@@ -6,7 +6,7 @@
 
 Benötigt wird ein Ordner, in dem alle Abgaben aus einem Kurs für eine bestimmte Aufgabe enthalten sind. Moodle Systeme erstellen, wenn alle Abgaben auf einmal heruntergeladen werden, für jeden Teilnehmer einen Ordner, der mit dem jeweiligen Namen anfängt. Das Programm benutzt eine Teilnehmerliste aus einer Daten `teilnehmer.txt`, in der alle Namen der Leute drin stehen, deren Abgabe behalten werden soll. Dafür reicht es, jeden Namen in jeweils eine Zeile der Textdatei zu schreiben (und Groß- und Kleinschreibung zu beachten).
 
-![Ausgangspunkt](readme/ausgang.png)
+![Ausgangspunkt](ausgang.png)
 
 ## Ausführen
 
@@ -15,3 +15,14 @@ Zum Ausführen einfach **alle** Abgaben in einen Ordner `Abgaben` im selben Verz
 ```
 python3 remove.py
 ```
+
+## Optionen
+
+Innerhalb des Skipt können zwei Optionen angepasst werden. Wenn das Skript selbst nicht im Selben Verzeichnis sein soll, können die Datenpfade der Teilnehmerliste und des Abgabenordners angepasst werden.
+
+```python
+teilnehmerliste = 'teilnehmer.txt'
+abgabenordner   = 'Abgaben'
+```
+
+Dafür statt `teilnehmer.txt` bzw `Abgaben` einfach den gesamten Dateipfad angeben und ausführen.

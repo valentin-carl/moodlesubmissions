@@ -18,7 +18,7 @@ python3 remove.py
 
 ## Optionen
 
-Innerhalb des Skipts können zwei Optionen angepasst werden. Wenn das Skript selbst nicht im Selben Verzeichnis sein soll oder die Dateien anders heißen, können die Datenpfade der Teilnehmerliste und des Abgabenordners angepasst werden.
+Innerhalb des Skipts können zwei Optionen angepasst werden. Wenn das Skript selbst nicht im selben Verzeichnis sein soll oder die Dateien anders heißen, können die Datenpfade der Teilnehmerliste und des Abgabenordners angepasst werden.
 
 ```python
 teilnehmerliste = 'teilnehmer.txt'

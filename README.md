@@ -13,7 +13,7 @@ Benötigt wird ein Ordner, in dem alle Abgaben aus einem Kurs für eine bestimmt
 Zum Ausführen einfach **alle** Abgaben in einen Ordner `Abgaben` im selben Verzeichnis legen und das Skript ausführen. Übrig bleiben nur die Abgaben der Leute, die in der Teilnehmerliste stehen.
 
 ```
-python3 remove.py
+$ python3 remove.py
 ```
 
 ## Optionen

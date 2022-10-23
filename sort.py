@@ -1,9 +1,11 @@
+import os, re, shutil
+
 # constants
 tndir = 'Teilnehmer'
 abdir = 'Abgaben'
 
 # lists of participants, labs, and submissions
-tnl = [f for f in os.listdir(teilnehmerdir)]
+tnl = [f for f in os.listdir(tndir)]
 labs = [x.split('.')[0] for x in tnl]
 abgaben = [x for x in os.listdir(abdir) if not re.match(r"\..*", x)]
 

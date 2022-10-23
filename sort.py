@@ -30,3 +30,4 @@ for abgabe in abgaben:
             continue
     if os.path.isdir(f'{abdir}/{abgabe}'):
         shutil.rmtree(f'{abdir}/{abgabe}')
+

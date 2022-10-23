@@ -16,7 +16,7 @@ git clone git@github.com:valentin-carl/moodlesubmissions.git
 
 Im Ordner `Teilnehmer` sind zwei Teilnehmerlisten als Beispiel enthalten. Hier entsprechend viele Listen (eine pro Lab) anlegen und die Teilnehmer so wie die Beispiele eintragen. Wichtig: Der Name der Person muss vollständig sein bzw. so wie der Moodle Name sein, damit die Abgabe nicht aussortiert wird.
 
-3. Alle Abgaben von Moodle herunterladen.
+3. Alle Abgaben von Moodle herunterladen
 
 Dafür auf die entsprechende Aufgabe bei Moodle gehen, das Zahnrad anklicken und „Alle Abgaben herunterladen” anklicken. Dann die Zip-Datei entpacken (Safari tut dies automatisch) und den Inhalt in den Abgabenordner schieben. Diese Repo enthält bereits ein Bespiel dafür, wie dies aussehen soll.
 

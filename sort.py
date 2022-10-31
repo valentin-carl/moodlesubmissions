@@ -1,4 +1,4 @@
-import os, re, shutil
+import os, re, shutil, zipfile
 
 # constants
 tndir = 'Teilnehmer'
@@ -32,4 +32,13 @@ for abgabe in abgaben:
             continue
     if os.path.isdir(f'{abdir}/{abgabe}'):
         shutil.rmtree(f'{abdir}/{abgabe}')
-
+        
+# unzip all submissions
+current_labs = [x for x in os.listdir(current_lab)]
+for lab in current_labs:
+    for abgabe in os.listdir(current_lab + '/' + lab):
+        contents = [x for x in os.listdir(current_lab + '/' + lab + '/' + abgabe) if re.match(r'.*\.zip', x)]
+        for archive in contents:
+            with zipfile.ZipFile(current_lab + '/' + lab + '/' + abgabe + '/' + archive) as file:
+                file.extractall(current_lab + '/' + lab + '/' + abgabe)
+                
